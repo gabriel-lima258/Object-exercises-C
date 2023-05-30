@@ -12,7 +12,8 @@ public:
     void mostra_dados();
 };
 
-void Cartesiano::entrada_dados()
+void Cartesiano::entrada_dados() // declaração do membro static dentro da class Cartesiano
+    
 {
     cout << "Digite a coordenada x do plano: ";
     cin >> x;
