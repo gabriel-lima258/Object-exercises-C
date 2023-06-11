@@ -8,7 +8,7 @@ private:
 
 public:
     void entrada() {
-        cout << "Digite um número: ";
+        cout << "Digite um nÃºmero: ";
         cin >> numero;
     }
 
@@ -37,9 +37,9 @@ int main() {
         perfeito.entrada();
 
         if (perfeito.verifica_perfeito()) {
-            cout << perfeito.getNumero() << " é um número perfeito." << endl;
+            cout << perfeito.getNumero() << " Ã© um nÃºmero perfeito." << endl;
         } else {
-            cout << perfeito.getNumero() << " não é um número perfeito." << endl;
+            cout << perfeito.getNumero() << " nÃ£o Ã© um nÃºmero perfeito." << endl;
         }
 
         cout << "Deseja continuar? (s/n): ";
