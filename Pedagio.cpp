@@ -37,16 +37,16 @@ int main() {
 
     char tecla;
 
-    cout << "Digite '1' para registrar um carro pagante e '2' para carro não pagante. Caso queira encerrar aperte 'ESC'" << endl;
+    cout << "Digite '1' para registrar um carro pagante e '2' para carro nÃ£o pagante. Caso queira encerrar aperte 'ESC'" << endl;
 
-    while ((tecla = _getch()) != 27) // 27 é o código da tecla Esc
+    while ((tecla = _getch()) != 27) // 27 Ã© o cÃ³digo da tecla Esc
     {
         if (tecla == '1') {
             pedagio.Paga_carro();
             cout << "O carro pagou o pedagio com sucesso!" << endl;
         } else if  ( tecla == '2') {
             pedagio.Nao_Paga_carro();
-            cout << "Carro não pagante registrado com sucesso!" << endl;
+            cout << "Carro nÃ£o pagante registrado com sucesso!" << endl;
         }
     }
 
