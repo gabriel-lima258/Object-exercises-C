@@ -28,7 +28,7 @@ public:
         cout << "Digite o salario: ";
         cin >> salario;
 
-        cout << "Digite o número da casa: ";
+        cout << "Digite o nÃºmero da casa: ";
         cin >> endereco.numeroCasa;
 
         cin.ignore(); // Ignorar a quebra de linha residual
