@@ -8,14 +8,13 @@ class Int
 private:
     int valor;
 public:
-    void inicializar()
-    {
-        valor = 0;
-    }
+    Int() : valor(0) {} // construtor sem argumento
 
-    void inicializarComValor(int valorInicial)
+    Int(int valorInicial) : valor(valorInicial) {} // construtor com argumento
+
+    void somar(const Int& valorSoma)
     {
-        valor = valorInicial;
+        valor += valorSoma.valor;
     }
 
     void mostrar()
@@ -23,23 +22,16 @@ public:
         cout << valor;
     }
 
-    void adicionar(const Int& outroValor)
-    {
-        valor += outroValor.valor;
-    }
 };
 
 int main()
 {
     Int notIniciado;
-    Int iniciado1;
-    Int iniciado2;
+    Int iniciado1(10);
+    Int iniciado2(11);
 
-    iniciado1.inicializarComValor(10);
-    iniciado2.inicializarComValor(11);
-
-    notIniciado.adicionar(iniciado1);
-    notIniciado.adicionar(iniciado2);
+    notIniciado.somar(iniciado1);
+    notIniciado.somar(iniciado2);
 
     cout << "Resultado: ";
     notIniciado.mostrar();
